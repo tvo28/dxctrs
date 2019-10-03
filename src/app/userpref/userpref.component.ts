@@ -2,8 +2,8 @@ import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'user-pref',
-  template: `<h1>Hello</h1>`,
-  styles: [`h1 { font-family: Lato; }`]
+  templateUrl: './userpref.component.html',
+  styleUrls: [ './userpref.component.css' ]
 })
 export class UserPrefComponent  {
   //@Input() name: string;
