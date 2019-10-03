@@ -3,6 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
 import { RouterModule, Routes } from '@angular/router';
 
+import {DemoMaterialModule} from './material-module';
 import { AppComponent } from './app.component';
 import { UserPrefComponent } from './userpref/userpref.component';
 
@@ -17,7 +18,9 @@ const appRoutes: Routes = [
       appRoutes,
       { enableTracing: true } // <-- debugging purposes only
     ),
-    BrowserModule, FormsModule ],
+    BrowserModule, 
+    FormsModule,
+    DemoMaterialModule ],
   declarations: [ AppComponent, UserPrefComponent ],
   bootstrap:    [ AppComponent ]
 })
